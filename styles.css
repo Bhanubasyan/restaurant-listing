@@ -1,11 +1,11 @@
-/* GLOBAL */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f8f8f8;
 }
 
-/* 🔴 NAVBAR */
+
 .navbar {
   background: white;
   padding: 12px 0;
@@ -61,7 +61,7 @@ body {
   display: flex;
 }
 
-/* 🔴 SEARCH BAR SECTION */
+
 .search-section {
   background: white;
   padding: 20px 0;
@@ -101,7 +101,7 @@ body {
   font-size: 20px;
 }
 
-/* 🔴 FILTER BUTTONS */
+
 .filter-container {
   width: 90%;
   max-width: 1100px;
@@ -119,7 +119,7 @@ body {
   cursor: pointer;
 }
 
-/* 🔴 CARD GRID */
+
 .card-container {
   width: 90%;
   max-width: 1200px;
@@ -172,7 +172,7 @@ body {
   color: #666;
 }
 
-/* 🔴 MOBILE */
+
 @media(max-width: 768px) {
   .menu {
     display: none;
