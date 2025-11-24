@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zomato Restaurant Listing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Zomato</div>
+
+      <div class="menu">
+        <a href="#">Login</a>
+        <a href="#">Sign Up</a>
+      </div>
+
+
+      <div class="hamburger">
+        ☰
+      </div>
+    </div>
+  </nav>
+
+  
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#">Login</a>
+    <a href="#">Sign Up</a>
+  </div>
+
+  <!--  SEARCH BAR SECTION -->
+  <section class="search-section">
+    <div class="search-container">
+
+      <!-- Location box -->
+      <div class="location-box">
+        <span class="icon">📍</span>
+        <select>
+          <option>Delhi</option>
+          <option>Dehradun</option>
+          <option>Haridwar</option>
+          <option>Rishikesh</option>
+          <option>Gurugram</option>
+        </select>
+      </div>
+
+      <!-- Search input -->
+      <div id="searchInput" class="search-box">
+        <span class="icon">🔍</span>
+        <input type="text" id="searchInput" class="form-control" placeholder="Search food, restaurant, cuisine...">
+
+      </div>
+
+    </div>
+  </section>
+
+  <!--  FILTER BUTTONS -->
+  <div class="filter-container">
+    <button class="filter-btn">Filters</button>
+    <button class="filter-btn">Rating</button>
+    <button class="filter-btn">Cost</button>
+    <button class="filter-btn">Delivery</button>
+  </div>
+
+  <!--  RESTAURANT LISTING -->
+  <div class="card-container" id="cardsContainer">
+    <div class="card card-item" data-name="Italian Cheese Pizza">
+      <img src="Images/pizza.jpg" alt="Pizza" />
+      <h3>Italian Cheese Pizza</h3>
+      <p class="rating">⭐ 4.5 (1,200 ratings)</p>
+      <p class="cuisine">Italian, Fast Food</p>
+      <p class="location">📍 Connaught Place, Delhi</p>
+    </div>
+
+    <div class="card card-item" data-name="Classic Chicken Burger">
+      <img src="Images/burger.jpg" alt="Burger" />
+      <h3>Classic Chicken Burger</h3>
+      <p class="rating">⭐ 4.2 (780 ratings)</p>
+      <p class="cuisine">American, Fast Food</p>
+      <p class="location">📍 Rajouri Garden, Delhi</p>
+    </div>
+
+    <div class="card card-item" data-name="Steamed Veg Momos">
+      <img src="Images/momos.jpg" alt="Momos" />
+      <h3>Steamed Veg Momos</h3>
+      <p class="rating">⭐ 4.0 (550 ratings)</p>
+      <p class="cuisine">Tibetan, Street Food</p>
+      <p class="location">📍 Lajpat Nagar, Delhi</p>
+    </div>
+
+    <div class="card card-item" data-name="Hyderabadi Chicken Biryani">
+      <img src="Images/chicken_biryani.jpg" alt="Biryani" />
+      <h3>Hyderabadi Chicken Biryani</h3>
+      <p class="rating">⭐ 4.7 (1,700 ratings)</p>
+      <p class="cuisine">Hyderabadi, Mughlai</p>
+      <p class="location">📍 Charminar, Hyderabad</p>
+    </div>
+
+    <div class="card card-item" data-name="Delhi Chole Bhature">
+      <img src="Images/chole.jpg" alt="Chole Bhature" />
+      <h3>Delhi Chole Bhature</h3>
+      <p class="rating">⭐ 4.3 (820 ratings)</p>
+      <p class="cuisine">North Indian, Punjabi</p>
+      <p class="location">📍 Karol Bagh, Delhi</p>
+    </div>
+
+    <div class="card card-item" data-name="Good Food & Drinks">
+      <img src="Images/good food, drinks.jpg" alt="Good Food" />
+      <h3>Good Food & Drinks</h3>
+      <p class="rating">⭐ 4.1 (658 ratings)</p>
+      <p class="cuisine">Hauz Khas Social</p>
+      <p class="location">📍 Hauz Khas Village, Delhi</p>
+    </div>
+
+    <div class="card card-item" data-name="Hakka Veg Noodles">
+      <img src="Images/noodles.jpg" alt="Noodles" />
+      <h3>Hakka Veg Noodles</h3>
+      <p class="rating">⭐ 4.2 (910 ratings)</p>
+      <p class="cuisine">Chinese, Asian</p>
+      <p class="location">📍 Indiranagar, Bangalore</p>
+    </div>
+
+    <div class="card card-item" data-name="Crispy Aloo Samosa">
+      <img src="Images/samosa.jpg" alt="Samosa" />
+      <h3>Crispy Aloo Samosa</h3>
+      <p class="rating">⭐ 4.1 (600 ratings)</p>
+      <p class="cuisine">Indian, Snacks</p>
+      <p class="location">📍 Civil Lines, Delhi</p>
+    </div>
+
+    <div class="card card-item" data-name="Rajasthani Thali">
+      <img src="Images/thali.jpg" alt="Thali" />
+      <h3>Rajasthani Thali</h3>
+      <p class="rating">⭐ 4.6 (1,050 ratings)</p>
+      <p class="cuisine">Rajasthani, Indian</p>
+      <p class="location">📍 Jaipur City, Rajasthan</p>
+    </div>
+
+    <div class="card card-item" data-name="Masala Dosa">
+      <img src="Images/dosa.jpg" alt="Dosa" />
+      <h3>Masala Dosa</h3>
+      <p class="rating">⭐ 4.4 (920 ratings)</p>
+      <p class="cuisine">South Indian</p>
+      <p class="location">📍 JP Nagar, Bangalore</p>
+    </div>
+
+    <div class="card card-item" data-name="Cold Brew Coffee">
+      <img src="Images/cold coffe" alt="Coffee" />
+      <h3>Cold Brew Coffee</h3>
+      <p class="rating">⭐ 4.8 (1,500 ratings)</p>
+      <p class="cuisine">Beverages, Cafe</p>
+      <p class="location">📍 Saket, Delhi</p>
+    </div>
+
+    <div class="card card-item" data-name="Japanese Sushi Platter">
+      <img src="Images/sushi.jpg" alt="Sushi" />
+      <h3>Japanese Sushi Platter</h3>
+      <p class="rating">⭐ 4.7 (850 ratings)</p>
+      <p class="cuisine">Japanese, Asian</p>
+      <p class="location">📍 Koregaon Park, Pune</p>
+    </div>
+
+    <div class="card card-item" data-name="Paneer Kathi Roll">
+      <img src="Images/rolls.jpg" alt="Rolls" />
+      <h3>Paneer Kathi Roll</h3>
+      <p class="rating">⭐ 4.3 (700 ratings)</p>
+      <p class="cuisine">Street Food</p>
+      <p class="location">📍 Noida Sector 18</p>
+    </div>
+
+    <div class="card card-item" data-name="Chocolate Lava Cake">
+      <img src="Images/cake.jpg" alt="Cake" />
+      <h3>Chocolate Lava Cake</h3>
+      <p class="rating">⭐ 4.9 (1,900 ratings)</p>
+      <p class="cuisine">Desserts, Bakery</p>
+      <p class="location">📍 MG Road, Mumbai</p>
+    </div>
+
+    <div class="card card-item" data-name="Belgian Chocolate Ice Cream">
+      <img src="Images/icecream.jpg" alt="Ice Cream" />
+      <h3>Belgian Chocolate Ice Cream</h3>
+      <p class="rating">⭐ 4.5 (600 ratings)</p>
+      <p class="cuisine">Dessert, Ice Cream</p>
+      <p class="location">📍 BTM Layout, Bangalore</p>
+    </div>
+
+    <div class="card card-item" data-name="Mumbai Pav Bhaji">
+      <img src="Images/pavbhaji.jpg" alt="Pav Bhaji" />
+      <h3>Mumbai Pav Bhaji</h3>
+      <p class="rating">⭐ 4.4 (780 ratings)</p>
+      <p class="cuisine">Indian, Street Food</p>
+      <p class="location">📍 Dadar, Mumbai</p>
+    </div>
+
+    <div class="card card-item" data-name="Mexican Veg Tacos">
+      <img src="Images/tacos.jpg" alt="Tacos" />
+      <h3>Mexican Veg Tacos</h3>
+      <p class="rating">⭐ 4.5 (950 ratings)</p>
+      <p class="cuisine">Mexican</p>
+      <p class="location">📍 Bandra West, Mumbai</p>
+    </div>
+
+    <div class="card card-item" data-name="Cheesy White Sauce Pasta">
+      <img src="Images/pasta.jpg" alt="Pasta" />
+      <h3>Cheesy White Sauce Pasta</h3>
+      <p class="rating">⭐ 4.3 (880 ratings)</p>
+      <p class="cuisine">Italian</p>
+      <p class="location">📍 Gurgaon Cyber Hub</p>
+    </div>
+
+    <div class="card card-item" data-name="Hot & Sour Soup">
+      <img src="Images/soup.jpg" alt="Soup" />
+      <h3>Hot & Sour Soup</h3>
+      <p class="rating">⭐ 4.0 (480 ratings)</p>
+      <p class="cuisine">Chinese</p>
+      <p class="location">📍 Rohini, Delhi</p>
+    </div>
+
+    <div class="card card-item" data-name="Soft Idli Sambhar">
+      <img src="Images/idli.jpg" alt="Idli" />
+      <h3>Soft Idli Sambhar</h3>
+      <p class="rating">⭐ 4.3 (830 ratings)</p>
+      <p class="cuisine">South Indian</p>
+      <p class="location">📍 Coimbatore</p>
+    </div>
+
+    <div class="card card-item" data-name="Lebanese Chicken Shawarma">
+      <img src="Images/shawarma.jpg" alt="Shawarma" />
+      <h3>Lebanese Chicken Shawarma</h3>
+      <p class="rating">⭐ 4.6 (700 ratings)</p>
+      <p class="cuisine">Lebanese</p>
+      <p class="location">📍 Saket, Delhi</p>
+    </div>
+
+    <div class="card card-item" data-name="Falafel Wrap">
+      <img src="Images/falafel.jpg" alt="Falafel" />
+      <h3>Falafel Wrap</h3>
+      <p class="rating">⭐ 4.2 (510 ratings)</p>
+      <p class="cuisine">Mediterranean</p>
+      <p class="location">📍 Kalyani Nagar, Pune</p>
+    </div>
+
+    <div class="card card-item" data-name="Lucknowi Seekh Kebabs">
+      <img src="Images/kebab.jpg" alt="Kebab" />
+      <h3>Lucknowi Seekh Kebabs</h3>
+      <p class="rating">⭐ 4.8 (1,300 ratings)</p>
+      <p class="cuisine">Mughlai</p>
+      <p class="location">📍 Hazratganj, Lucknow</p>
+    </div>
+
+    <div class="card card-item" data-name="Grilled Lemon Fish">
+      <img src="Images/fish.jpg" alt="Fish" />
+      <h3>Grilled Lemon Fish</h3>
+      <p class="rating">⭐ 4.4 (780 ratings)</p>
+      <p class="cuisine">Continental</p>
+      <p class="location">📍 Panaji, Goa</p>
+    </div>
+
+    <div class="card card-item" data-name="Paneer Butter Masala">
+      <img src="Images/paneer.jpg" alt="Paneer" />
+      <h3>Paneer Butter Masala</h3>
+      <p class="rating">⭐ 4.7 (1,000 ratings)</p>
+      <p class="cuisine">North Indian</p>
+      <p class="location">📍 Chandigarh</p>
+    </div>
+
+    <div class="card card-item" data-name="Green Detox Salad">
+      <img src="Images/salad.jpg" alt="Salad" />
+      <h3>Green Detox Salad</h3>
+      <p class="rating">⭐ 4.1 (520 ratings)</p>
+      <p class="cuisine">Healthy Food</p>
+      <p class="location">📍 Powai, Mumbai</p>
+    </div>
+
+    <div class="card card-item" data-name="Peri Peri Fries">
+      <img src="Images/fries.jpg" alt="Fries" />
+      <h3>Peri Peri Fries</h3>
+      <p class="rating">⭐ 4.4 (940 ratings)</p>
+      <p class="cuisine">Fast Food</p>
+      <p class="location">📍 Sarojini Nagar, Delhi</p>
+    </div>
+
+    <div class="card card-item" data-name="Nutella Waffles">
+      <img src="Images/waffles.jpg" alt="Waffles" />
+      <h3>Nutella Waffles</h3>
+      <p class="rating">⭐ 4.9 (1,850 ratings)</p>
+      <p class="cuisine">Desserts</p>
+      <p class="location">📍 Salt Lake, Kolkata</p>
+    </div>
+
+    <div class="card card-item" data-name="Dilli Aloo Tikki Chaat">
+      <img src="Images/chaat.jpg" alt="Chaat" />
+      <h3>Dilli Aloo Tikki Chaat</h3>
+      <p class="rating">⭐ 4.3 (670 ratings)</p>
+      <p class="cuisine">Street Food</p>
+      <p class="location">📍 Chandni Chowk, Delhi</p>
+    </div>
+
+    <div class="card card-item" data-name="Korean Kimchi Bowl">
+      <img src="Images/korean.jpg" alt="Korean" />
+      <h3>Korean Kimchi Bowl</h3>
+      <p class="rating">⭐ 4.5 (740 ratings)</p>
+      <p class="cuisine">Korean, Asian</p>
+      <p class="location">📍 HSR Layout, Bangalore</p>
+    </div>
+
+  </div>
+
+  </div>
+</body>
+
+</html>
