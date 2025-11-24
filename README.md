@@ -14,7 +14,7 @@ This is a simple Zomato-style restaurant listing web page built using **HTML, CS
 
 ## Deployment
 This project is deployed using **GitHub Pages**:  
-[Live Demo](https://Bhanubasyan.github.io/restaurant-listing/)
+[Live Demo](https://zomato-restaurant-listing.netlify.app/)
 
 ## Author
-**Bhanu **
+**Bhanu**
